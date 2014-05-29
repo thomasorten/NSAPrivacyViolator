@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The NSA respectfully requests your location, at all times." translatesAutoresizingMaskIntoConstraints="NO" id="VA2-wd-Ysr">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The NSA respectfully requests your location, at all times." translatesAutoresizingMaskIntoConstraints="NO" id="VA2-wd-Ysr">
                                 <rect key="frame" x="20" y="90" width="280" height="478"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,6 +39,9 @@
                                 <state key="normal" title="What? NO!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startViolatingPrivacy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="deg-fG-0lm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -46,6 +49,8 @@
                     <navigationItem key="navigationItem" title="Dear Citizen" id="0ka-xU-vz2"/>
                     <connections>
                         <outlet property="myTextView" destination="VA2-wd-Ysr" id="YwC-tx-7E9"/>
+                        <outlet property="noButton" destination="TNg-8u-Msb" id="F6f-yY-9di"/>
+                        <outlet property="yesButton" destination="iwK-TW-Thq" id="OAH-5R-DZE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
