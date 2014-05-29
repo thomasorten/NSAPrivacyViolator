@@ -21,6 +21,7 @@
 		4532D8131937862400D8EDEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4532D7F51937862400D8EDEB /* UIKit.framework */; };
 		4532D81B1937862400D8EDEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4532D8191937862400D8EDEB /* InfoPlist.strings */; };
 		4532D81D1937862400D8EDEB /* NSAPrivacyViolatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4532D81C1937862400D8EDEB /* NSAPrivacyViolatorTests.m */; };
+		4532D827193788D300D8EDEB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4532D826193788D300D8EDEB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4532D8181937862400D8EDEB /* NSAPrivacyViolatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSAPrivacyViolatorTests-Info.plist"; sourceTree = "<group>"; };
 		4532D81A1937862400D8EDEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4532D81C1937862400D8EDEB /* NSAPrivacyViolatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAPrivacyViolatorTests.m; sourceTree = "<group>"; };
+		4532D826193788D300D8EDEB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4532D827193788D300D8EDEB /* CoreLocation.framework in Frameworks */,
 				4532D7F41937862400D8EDEB /* CoreGraphics.framework in Frameworks */,
 				4532D7F61937862400D8EDEB /* UIKit.framework in Frameworks */,
 				4532D7F21937862400D8EDEB /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		4532D7F01937862400D8EDEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4532D826193788D300D8EDEB /* CoreLocation.framework */,
 				4532D7F11937862400D8EDEB /* Foundation.framework */,
 				4532D7F31937862400D8EDEB /* CoreGraphics.framework */,
 				4532D7F51937862400D8EDEB /* UIKit.framework */,

@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
 
 @end
 
@@ -17,13 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.myLocationManager = [[CLLocationManager alloc] init];
+    self.myLocationManager.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)startViolatingPrivacy:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.myLocationManager startUpdatingLocation];
+    self.myTextView.text = @"Finding your location...";
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"%@", error);
 }
 
 @end
